@@ -1,0 +1,43 @@
+@startuml
+
+!define htwgreen #93c33a
+!define htworange #FF5F00
+!define htwblue #0082D1
+!define htwgrey #AFAFAF
+
+skinparam shadowing false
+
+skinparam Arrow {
+    Color htwgrey
+    FontColor black
+}
+
+skinparam Class {
+    BackgroundColor htwgreen
+    BorderColor htwgreen
+    FontColor white
+    FontStyle bold
+    FontSize 30
+    Attribute {
+        FontColor white
+    }
+}
+
+
+
+
+skinparam Rectangle {
+    BorderColor htwblue
+    FontColor htwblue
+}
+
+hide empty members
+hide circle
+
+"Linux Driver" -- "STM32": UART
+"STM32" -- "Accelerometer" : "I2C"
+"STM32" -- "Button 1" : "GPIO"
+"STM32" -- "Button 2" : "GPIO"
+"STM32" -- "LEDx8" : "GPIOx8"
+
+@enduml

@@ -1,3 +1,7 @@
 * Gyromouse
 
-[[file:demo.gif]]
+  Control your PC with gyro controls!
+  
+  [[file:docs/demo.gif]]
+** Architecture
+  [[file:docs/architecture.svg]] 
